@@ -8,14 +8,18 @@
 import UIKit
 import Firebase
 
+
+protocol ViewControllerDelegate {
+    func goToAccountVC()
+    func goToCardVC()
+    func goToCreateVC()
+}
+
 class ViewController: UIViewController {
     var handle: AuthStateDidChangeListenerHandle?
-    
+    var delegate = Coordinator()
     @IBOutlet weak var emailTextField: UITextField!
-    
     @IBOutlet weak var passwordTextField: UITextField!
-    
-    
     @IBAction func createUserButton(_ sender: Any) {
         let email = emailTextField.text
         let password = passwordTextField.text
@@ -123,3 +127,8 @@ class ViewController: UIViewController {
     
 }
 
+extension ViewController: UICollectionViewDelegate {
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        delegate.goToAccountVC()
+    }
+}

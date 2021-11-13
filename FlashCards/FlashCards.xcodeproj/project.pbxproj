@@ -17,6 +17,13 @@
 		478295762739838A00CA754C /* FirebaseDatabase in Frameworks */ = {isa = PBXBuildFile; productRef = 478295752739838A00CA754C /* FirebaseDatabase */; };
 		478295782739838A00CA754C /* FirebaseRemoteConfig in Frameworks */ = {isa = PBXBuildFile; productRef = 478295772739838A00CA754C /* FirebaseRemoteConfig */; };
 		4782957A2739948D00CA754C /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 478295792739948D00CA754C /* GoogleService-Info.plist */; };
+		EF94C4172740223600CBFEB1 /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF94C4162740223600CBFEB1 /* Coordinator.swift */; };
+		EF94C421274027F700CBFEB1 /* Cards.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EF94C420274027F700CBFEB1 /* Cards.storyboard */; };
+		EF94C4242740287800CBFEB1 /* cardsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF94C4232740287800CBFEB1 /* cardsVC.swift */; };
+		EF94C4262740290500CBFEB1 /* Account.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EF94C4252740290500CBFEB1 /* Account.storyboard */; };
+		EF94C4282740295500CBFEB1 /* Create.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EF94C4272740295500CBFEB1 /* Create.storyboard */; };
+		EF94C42A2740298A00CBFEB1 /* createVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF94C4292740298A00CBFEB1 /* createVC.swift */; };
+		EF94C42C274029AC00CBFEB1 /* accountVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF94C42B274029AC00CBFEB1 /* accountVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +36,13 @@
 		4782956527397A8F00CA754C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4782956727397A8F00CA754C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		478295792739948D00CA754C /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "FlashCards/GoogleService-Info.plist"; sourceTree = "<group>"; };
+		EF94C4162740223600CBFEB1 /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
+		EF94C420274027F700CBFEB1 /* Cards.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Cards.storyboard; sourceTree = "<group>"; };
+		EF94C4232740287800CBFEB1 /* cardsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = cardsVC.swift; sourceTree = "<group>"; };
+		EF94C4252740290500CBFEB1 /* Account.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Account.storyboard; sourceTree = "<group>"; };
+		EF94C4272740295500CBFEB1 /* Create.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Create.storyboard; sourceTree = "<group>"; };
+		EF94C4292740298A00CBFEB1 /* createVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = createVC.swift; sourceTree = "<group>"; };
+		EF94C42B274029AC00CBFEB1 /* accountVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = accountVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,15 +79,11 @@
 		4782955827397A8E00CA754C /* FlashCards */ = {
 			isa = PBXGroup;
 			children = (
+				EF94C4222740283D00CBFEB1 /* View */,
+				EF94C41F274027DC00CBFEB1 /* Storyboards */,
+				EF94C4182740223D00CBFEB1 /* Coordinator */,
 				4782955927397A8E00CA754C /* AppDelegate.swift */,
-				4782957127397B6E00CA754C /* Coordinator */,
-				4782956F27397B0400CA754C /* ViewModel */,
-				4782957027397B1100CA754C /* Views */,
-				4782956E27397AF500CA754C /* Model */,
-				4782956D27397AE300CA754C /* Network */,
 				4782955B27397A8E00CA754C /* SceneDelegate.swift */,
-				4782955D27397A8E00CA754C /* ViewController.swift */,
-				4782955F27397A8E00CA754C /* Main.storyboard */,
 				4782956227397A8F00CA754C /* Assets.xcassets */,
 				4782956427397A8F00CA754C /* LaunchScreen.storyboard */,
 				4782956727397A8F00CA754C /* Info.plist */,
@@ -81,39 +91,34 @@
 			path = FlashCards;
 			sourceTree = "<group>";
 		};
-		4782956D27397AE300CA754C /* Network */ = {
+		EF94C4182740223D00CBFEB1 /* Coordinator */ = {
 			isa = PBXGroup;
 			children = (
-			);
-			path = Network;
-			sourceTree = "<group>";
-		};
-		4782956E27397AF500CA754C /* Model */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Model;
-			sourceTree = "<group>";
-		};
-		4782956F27397B0400CA754C /* ViewModel */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = ViewModel;
-			sourceTree = "<group>";
-		};
-		4782957027397B1100CA754C /* Views */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Views;
-			sourceTree = "<group>";
-		};
-		4782957127397B6E00CA754C /* Coordinator */ = {
-			isa = PBXGroup;
-			children = (
+				EF94C4162740223600CBFEB1 /* Coordinator.swift */,
 			);
 			path = Coordinator;
+			sourceTree = "<group>";
+		};
+		EF94C41F274027DC00CBFEB1 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				4782955F27397A8E00CA754C /* Main.storyboard */,
+				EF94C4252740290500CBFEB1 /* Account.storyboard */,
+				EF94C4272740295500CBFEB1 /* Create.storyboard */,
+				EF94C420274027F700CBFEB1 /* Cards.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		EF94C4222740283D00CBFEB1 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				4782955D27397A8E00CA754C /* ViewController.swift */,
+				EF94C4232740287800CBFEB1 /* cardsVC.swift */,
+				EF94C4292740298A00CBFEB1 /* createVC.swift */,
+				EF94C42B274029AC00CBFEB1 /* accountVC.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -185,7 +190,10 @@
 				4782956627397A8F00CA754C /* LaunchScreen.storyboard in Resources */,
 				4782957A2739948D00CA754C /* GoogleService-Info.plist in Resources */,
 				4782956327397A8F00CA754C /* Assets.xcassets in Resources */,
+				EF94C421274027F700CBFEB1 /* Cards.storyboard in Resources */,
+				EF94C4262740290500CBFEB1 /* Account.storyboard in Resources */,
 				4782956127397A8E00CA754C /* Main.storyboard in Resources */,
+				EF94C4282740295500CBFEB1 /* Create.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -196,7 +204,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EF94C42A2740298A00CBFEB1 /* createVC.swift in Sources */,
+				EF94C4242740287800CBFEB1 /* cardsVC.swift in Sources */,
+				EF94C4172740223600CBFEB1 /* Coordinator.swift in Sources */,
 				4782955E27397A8E00CA754C /* ViewController.swift in Sources */,
+				EF94C42C274029AC00CBFEB1 /* accountVC.swift in Sources */,
 				4782955A27397A8E00CA754C /* AppDelegate.swift in Sources */,
 				4782955C27397A8E00CA754C /* SceneDelegate.swift in Sources */,
 			);
