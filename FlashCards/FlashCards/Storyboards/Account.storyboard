@@ -11,17 +11,57 @@
         <!--accountVC-->
         <scene sceneID="s0d-6b-0kx">
             <objects>
-                <viewController storyboardIdentifier="accountVC" id="Y6W-OH-hqX" userLabel="accountVC" customClass="AccountVC" customModule="FlashCards" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="accountVC" id="Y6W-OH-hqX" userLabel="accountVC" customClass="accountVC" customModule="FlashCards" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Username:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eeo-u9-ZaG">
+                                <rect key="frame" x="20" y="44" width="83" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Date Joined:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0Xu-3o-vWe">
+                                <rect key="frame" x="20" y="73" width="96" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="749" misplaced="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mLw-7x-417">
+                                <rect key="frame" x="124" y="73" width="270" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="744" verticalCompressionResistancePriority="749" misplaced="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Blg-SS-gme">
+                                <rect key="frame" x="124" y="44" width="270" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="eeo-u9-ZaG" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="20" id="0Di-qt-6sb"/>
+                            <constraint firstItem="eeo-u9-ZaG" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" id="6HW-rH-VQ5"/>
+                            <constraint firstItem="Blg-SS-gme" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" id="G17-Kp-6JY"/>
+                            <constraint firstItem="0Xu-3o-vWe" firstAttribute="top" secondItem="eeo-u9-ZaG" secondAttribute="bottom" constant="8" symbolic="YES" id="I85-xN-add"/>
+                            <constraint firstItem="mLw-7x-417" firstAttribute="leading" secondItem="0Xu-3o-vWe" secondAttribute="trailing" constant="8" symbolic="YES" id="Jy3-cb-XJT"/>
+                            <constraint firstItem="Blg-SS-gme" firstAttribute="leading" secondItem="eeo-u9-ZaG" secondAttribute="trailing" constant="21" id="O92-eM-A3L"/>
+                            <constraint firstItem="0Xu-3o-vWe" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="20" id="oeo-oz-gD9"/>
+                            <constraint firstItem="mLw-7x-417" firstAttribute="top" secondItem="Blg-SS-gme" secondAttribute="bottom" constant="8" symbolic="YES" id="pa0-y5-oxm"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="dateJoinedDisplay" destination="mLw-7x-417" id="h0E-Gs-Qrt"/>
+                        <outlet property="usernameLabel" destination="Blg-SS-gme" id="A6V-Ys-k88"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="20" y="82"/>
+            <point key="canvasLocation" x="18.840579710144929" y="81.696428571428569"/>
         </scene>
     </scenes>
     <resources>

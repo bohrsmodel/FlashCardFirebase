@@ -9,6 +9,7 @@ import Foundation
 import UIKit
 
 class cardsVC: UIViewController {
+    @IBOutlet weak var collectionView: UICollectionView!
     override func viewDidLoad() {
         super.viewDidLoad()
     }

@@ -9,6 +9,9 @@ import Foundation
 import UIKit
 
 class accountVC: UIViewController {
+    @IBOutlet weak var usernameDisplay: UILabel!
+    @IBOutlet weak var dateJoinedDisplay: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
     }
